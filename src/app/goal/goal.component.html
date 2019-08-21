@@ -1,16 +1,3 @@
-<!-- <div>
-    <h1>My Goals</h1>
-    <ul>
-      <li *ngFor='let goal of goals'>
-        {{goal.id}} {{goal.name}}
-        <app-goal-detail [goal]='goal'></app-goal-detail>
-      </li>
-      <p *ngIf='goals.length>5'>Your goals are too many.</p>
-    </ul>
-  </div> -->
-
-
-
 <div class="container">
   <h1>MY GOALS</h1>
   <hr>
@@ -34,4 +21,10 @@
   </div>
 
   <p *ngIf='goals.length>5'>You have too many goals.</p>
+  <div class="row">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">{{quote.quote}}</p>
+      <footer class="blockquote-footer"><cite>{{quote.author}}</cite></footer>
+    </blockquote>
+  </div>
 </div>
